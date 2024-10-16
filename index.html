@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ონლაინ მაღაზია</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ონლაინ მაღაზია</h1>
+    </header>
+
+    <main>
+        <!-- პროდუქციის სექცია -->
+        <section id="products">
+            <h2>პროდუქტები</h2>
+            <div class="product">
+                <img src="images/product-image1.jpg" alt="პროდუქტის სახელი" />
+                <h3>პროდუქტის სახელი 1</h3>
+                <p>დონე: 50, ნივთები: 15</p>
+                <button class="add-to-cart-button">კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <img src="images/product-image2.jpg" alt="პროდუქტის სახელი" />
+                <h3>პროდუქტის სახელი 2</h3>
+                <p>დონე: 75, ნივთები: 10</p>
+                <button class="add-to-cart-button">კალათში დამატება</button>
+            </div>
+            <!-- დამატებითი პროდუქტები აქ -->
+        </section>
+
+        <!-- კალათის სექცია -->
+        <div class="cart">
+            <h3>კალათში პროდუქტი:</h3>
+            <ul id="cart-list"></ul>
+        </div>
+
+        <!-- რეგისტრაციის სექცია -->
+        <section id="registration">
+            <h2>რეგისტრაცია</h2>
+            <form id="registration-form">
+                <input type="text" placeholder="სახელი" required />
+                <input type="email" placeholder="ელ. ფოსტა" required />
+                <input type="password" placeholder="პაროლი" required />
+                <button type="submit">რეგისტრაცია</button>
+            </form>
+        </section>
+
+        <!-- შესვლის სექცია -->
+        <section id="login">
+            <h2>შესვლა</h2>
+            <form id="login-form">
+                <input type="email" placeholder="ელ. ფოსტა" required />
+                <input type="password" placeholder="პაროლი" required />
+                <button type="submit">შესვლა</button>
+            </form>
+        </section>
+
+        <!-- შეკვეთების ისტორია -->
+        <section id="order-history">
+            <h2>შეკვეთების ისტორია</h2>
+            <ul id="order-list"></ul>
+        </section>
+
+        <!-- კონტაქტის სექცია -->
+        <section id="contact">
+            <h2>კონტაქტი</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="სახელი" required />
+                <input type="email" placeholder="ელ. ფოსტა" required />
+                <textarea placeholder="თქვენი შეტყობინება" required></textarea>
+                <button type="submit">გაგზავნა</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>მოგწვდეთ ჩვენ სოციალურ ქსელებში:</p>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
